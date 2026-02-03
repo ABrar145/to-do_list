@@ -2,9 +2,13 @@
 import './App.css'
 
 function App() {
+  const name = "PM"
+  return <h1> hello {name}</h1>
+  
 
-  const logic = "React"
-  return <h1>hello {logic}!</h1>
+  
+
+  
 }
 
 

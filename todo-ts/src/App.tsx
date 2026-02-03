@@ -3,12 +3,15 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  return <div>
+      <input value={firstName} onChange={(e) =>setFirstName(e.target.value)} ></input>
+      <input value={lastName} onChange={(e) => setLastName(e.target.value)}></input>
 
-  return <>
-    <button onClick={() => setCount(count + 1)}> {count} </button>
-  </>
-
+      <div>{firstName} {lastName}</div>
+  </div>
+    
   
 }
 
